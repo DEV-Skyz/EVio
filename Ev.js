@@ -63,15 +63,7 @@ const End = ["BJ8", "C8Y", "PLOG", "C149"];
  
 
  
-if (isValidKey) {
-    showPopup(`Vaild <b>${location.hostname}</b> Script Key! <b>NOTE:</b> [O]Toggle <b>Menu</b>`);
-    urlParams.delete("key");
-    history.replaceState(null, null, "/" + urlParams.toString());
-    console.log('Valid Key');
-} else {
-    location.href = ``;
-    return;
-}
+
  
 const prototype_ = {
     ESP: {
@@ -484,7 +476,7 @@ document.addEventListener('keydown', function(event) {
         }
  
         if (!firstOpen) {
-            window.open('AAAAAAAA', '_blank')
+            window.open('', '_blank')
             firstOpen = true
         }
     }
